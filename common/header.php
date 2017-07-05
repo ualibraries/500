@@ -19,7 +19,10 @@
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
 
     <!-- Stylesheets -->
-    <?php echo head_css(); ?>
+    <?php
+      queue_css_file('main');
+      echo head_css(); 
+    ?>
 
     <!-- JavaScripts -->
     <?php echo head_js(); ?>
