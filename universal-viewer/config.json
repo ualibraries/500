@@ -76,7 +76,7 @@
         "searchResults": "{0} search results",
         "sortBy": "Sort By:",
         "thumbnails": "Thumbnails",
-        "title": "Contents",
+        "title": "Thumbnails",
         "volume": "volume"
       }
     },
@@ -117,7 +117,7 @@
     "footerPanel": {
       "options": {
         "bookmarkEnabled": false,
-        "downloadEnabled": true,
+        "downloadEnabled": false,
         "embedEnabled": false,
         "feedbackEnabled": false,
         "fullscreenEnabled": true,
