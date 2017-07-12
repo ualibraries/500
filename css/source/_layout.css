@@ -1,0 +1,10 @@
+//TODO: use a class here instead
+#content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#top-nav li {
+  display: inline;
+  padding: 5px;
+}
