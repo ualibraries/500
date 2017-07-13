@@ -105,7 +105,7 @@ module.exports = {
     ],
     // directories where to look for modules
 
-    extensions: ['.js', '.json', '.jsx', '.css'],
+    extensions: ['.js', '.json', '.jsx', '.css']
     // extensions that are used
   },
 
@@ -146,7 +146,7 @@ module.exports = {
     https: false, // true for self-signed, object for cert authority
     noInfo: true // only errors & warns on hot reload
   },
-  
+
   plugins: [
     new BrowserSyncPlugin({
       host: 'localhost',
