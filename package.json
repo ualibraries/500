@@ -38,5 +38,8 @@
     "stylelint": "^7.13.0",
     "url-loader": "^0.5.9",
     "webpack": "^3.2.0"
+  },
+  "engines": {
+    "node": "v6.11.0"
   }
 }
