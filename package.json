@@ -1,20 +1,19 @@
 {
-  "name": "500",
-  "version": "0.0.1",
-  "description": "Front end dependencies for the 500 Omeka theme.",
-  "author": "University Libraries",
-  "devDependencies": {
-    "autoprefixer": "^7.1.2",
-    "cssnext": "^1.8.4",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^7.0.0",
-    "postcss-nesting": "^4.0.1",
-    "postcss-normalize": "^4.0.0",
-    "postcss-scss": "^1.0.2",
-    "postcss-strip-inline-comments": "^0.1.5",
-    "precss": "^2.0.0"
+  "name": "reformation-500-omeka-theme",
+  "version": "1.0.0",
+  "description": "The Reformation 500 Omeka Exhibit Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "normalize.css": "^7.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ualibraries/500.git"
+  },
+  "author": "TeSS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ualibraries/500/issues"
+  },
+  "homepage": "https://github.com/ualibraries/500#readme"
 }
