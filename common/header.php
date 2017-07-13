@@ -18,14 +18,11 @@
     <!-- Plugin Stuff -->
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
 
-    <!-- Stylesheets -->
-    <?php
-      queue_css_file('main');
-      echo head_css(); 
-    ?>
-
     <!-- JavaScripts -->
-    <?php echo head_js(); ?>
+    <?php
+      queue_js_file('bundle');
+      echo head_js();
+    ?>
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
