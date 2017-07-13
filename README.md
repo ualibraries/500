@@ -4,6 +4,8 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Dependencies](https://david-dm.org/ualibraries/500.svg)](https://david-dm.org/ualibraries/500)
 
+![Screenshot](screenshot.jpg)
+
 ## Getting started
 
 Install the dependencies: `npm install`
