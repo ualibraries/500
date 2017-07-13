@@ -4,7 +4,10 @@
   "description": "The Reformation 500 Omeka Exhibit Theme",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/standard/bin/cmd.js && node_modules/stylelint/bin/stylelint.js \"src/**/*.css\""
+    "build:dev": "node_modules/webpack/bin/webpack.js -w --verbose",
+    "build:prod": "npm run lint && node_modules/webpack/bin/webpack.js -p",
+    "lint": "node_modules/standard/bin/cmd.js && node_modules/stylelint/bin/stylelint.js \"src/**/*.css\"",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
