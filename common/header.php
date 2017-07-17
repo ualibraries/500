@@ -27,14 +27,14 @@
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-    
+
     <header role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
             <?php echo theme_header_image(); ?>
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
-            
+
             <a href="#" class="search-toggle" aria-label="<?php echo __('Search'); ?>"></a>
             <div id="search-container">
                 <?php echo search_form(array('form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
@@ -46,7 +46,7 @@
             </nav>
 
         </header>
-        
+
         <article id="content">
-        
+
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
