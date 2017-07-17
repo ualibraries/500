@@ -1,3 +1,5 @@
 body {
+  background: var(--dark-red);
+  background: linear-gradient(to right, var(--dark-red) 0%, var(--bright-red) 30%, var(--bright-red) 70%, var(--dark-red) 100%);
   font-family: var(--body-font-family);
 }
