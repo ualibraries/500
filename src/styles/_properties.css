@@ -1,4 +1,9 @@
 :root {
-  --blue: #2483bb;
-  --default-text-align: left;
+  --bright-red: #68282b;
+  --dark-red: #5c3933;
+  --text-red: #6a2020;
+  --menu-hover-color: #af9d6c;
+  --body-color: #e6e1d6;
+  --body-font-family: 'Merriweather', serif;
+  --header-font-family: 'Oswald', sans-serif;
 }
