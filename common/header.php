@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,8 @@
     $titleParts[] = option('site_title');
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <?php echo auto_discovery_link_tags(); ?>
 
