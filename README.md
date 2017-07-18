@@ -20,16 +20,18 @@ Test it by running `npm test`. Lint it by running `npm run lint`.
 
 ## Live reloading
 
-We're using [Browsersync](https://browsersync.io/) for live reloading. Simply create
-a file named `.env` in your theme root, and add a line of configuration for your
-port number. Example contents:
+We're using [Browsersync](https://browsersync.io/) for live reloading. Create
+a file named `.env` in the theme root, and add one line of configuration describing
+the port number for your local development environment.
+
+Example contents:
 
 ```
 PORT=8888
 ```
 
-You should then be able to visit `localhost:3000/path/to/your/site` and have
-fancy live reloading.
+Browsersync uses port 3000 to proxy the existing content. Visit `localhost:3000/path/to/your/site`
+to see the fancy live reloading. Visit `localhost:3001` to see the Browsersync UI.
 
 ## Learn more
 
