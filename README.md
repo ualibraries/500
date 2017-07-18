@@ -18,6 +18,19 @@ You can build the project with [Webpack](https://webpack.github.io/) by running
 This project uses [JavaScript Standard Style](https://standardjs.com/).
 Test it by running `npm test`. Lint it by running `npm run lint`.
 
+## Live reloading
+
+We're using [Browsersync](https://browsersync.io/) for live reloading. Simply create
+a file named `.env` in your theme root, and add a line of configuration for your
+port number. Example contents:
+
+```
+PORT=8888
+```
+
+You should then be able to visit `localhost:3000/path/to/your/site` and have
+fancy live reloading.
+
 ## Learn more
 
 * [PostCSS](http://postcss.org/) and [CSSNext](http://cssnext.io/)
