@@ -20,6 +20,11 @@
     <!-- Plugin Stuff -->
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
 
+    <!-- Stylesheets -->
+    <?php
+      echo head_css();
+    ?>
+
     <!-- JavaScripts -->
     <?php
       queue_js_file('bundle');
@@ -33,19 +38,14 @@
     <header role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
-            <?php echo theme_header_image(); ?>
+            <nav id="exhibit-pages">
+                <p class="visuallyhidden"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
+                <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+            </nav>
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
 
-            <a href="#" class="search-toggle" aria-label="<?php echo __('Search'); ?>"></a>
-            <div id="search-container">
-                <?php echo search_form(array('form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
-            </div><!-- end search -->
-
-            <a href="#top-nav" class="menu-toggle" aria-label="<?php echo __('Menu'); ?>"></a>
-            <nav id="top-nav">
-                <?php echo public_nav_main(); ?>
-            </nav>
+            <a href="<?php echo url(get_theme_option('header_secondary_link')); ?>"><?php echo get_theme_option('header_secondary_link_text'); ?></a>
 
         </header>
 
