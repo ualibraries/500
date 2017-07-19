@@ -6,4 +6,6 @@
   --body-color: #e6e1d6;
   --body-font-family: "Merriweather", serif;
   --header-font-family: "Oswald", sans-serif;
+  --horizontal-padding-unit: 1.5rem;
+  --vertical-padding-unit: 1.4rem;
 }

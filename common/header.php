@@ -43,11 +43,11 @@
                 <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
             </nav>
 
-            <div id="site-title">
+            <div class="site-title">
                 <?php echo exhibit_builder_link_to_exhibit($exhibit, theme_logo()); ?>
             </div>
 
-            <a href="<?php echo url(get_theme_option('header_secondary_link')); ?>"><?php echo get_theme_option('header_secondary_link_text'); ?></a>
+            <a class="header-secondary-link" href="<?php echo url(get_theme_option('header_secondary_link')); ?>"><?php echo get_theme_option('header_secondary_link_text'); ?></a>
 
         </header>
 

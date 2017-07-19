@@ -1,0 +1,15 @@
+.site-title {
+  margin: var(--vertical-padding-unit);
+}
+
+.header-secondary-link {
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 35em) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
