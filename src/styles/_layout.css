@@ -1,12 +1,6 @@
-header,
+.exhibit-header,
 article,
 footer {
-  padding-right: var(--horizontal-padding-unit);
-  padding-left: var(--horizontal-padding-unit);
-}
-
-@media only screen and (min-width: 35em) {
-  header {
-    padding: 0;
-  }
+  padding-right: var(--padding-unit);
+  padding-left: var(--padding-unit);
 }
