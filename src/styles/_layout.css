@@ -1,6 +1,4 @@
-.exhibit-header,
-article,
-footer {
+.exhibit-header {
   padding-right: var(--padding-unit);
   padding-left: var(--padding-unit);
 }

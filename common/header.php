@@ -41,12 +41,10 @@
 
     <div class="exhibit-header">
         <div class="menu">
-            <button class="menu-button" id="open-button">Menu</button>
             <div class="menu-wrap">
                 <nav class="exhibit-pages">
                     <?php echo exhibit_builder_page_tree(); ?>
                 </nav>
-                <button class="close-button" id="close-button">Close</button>
             </div>
         </div>
 
