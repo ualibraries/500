@@ -32,6 +32,11 @@
 }
 
 /* Off canvas exhibit menu */
+.exhibit-menu {
+  position: relative;
+  margin-top: 2em;
+}
+
 .exhibit-menu ul {
   list-style: none;
 }
@@ -47,6 +52,7 @@
 @media (--screen-md) {
   .exhibit-menu {
     width: 30%;
+    margin-top: 0;
   }
 
   .exhibit-menu ul {
