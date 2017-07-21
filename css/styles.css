@@ -548,6 +548,12 @@ body {
 
 a {
   color: #e6e1d6;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+a:hover {
+  color: rgb(161, 158, 150);
 }
 
 img {
