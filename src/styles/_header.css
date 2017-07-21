@@ -1,13 +1,12 @@
 .site-title {
   margin-top: var(--padding-unit);
   margin-bottom: var(--padding-unit);
-  padding-top: var(--padding-unit);
-  padding-bottom: var(--padding-unit);
   text-align: center;
 }
 
 .site-title img {
-  max-width: 300px;
+  width: 500px;
+  max-width: 100%;
 }
 
 .site-title img[src$="svg"] {
@@ -16,6 +15,7 @@
 
 .header-secondary {
   text-align: center;
+  margin-bottom: calc(1.5 * var(--padding-unit));
 }
 
 .header-secondary-link {
@@ -33,6 +33,7 @@
 
   .header-secondary {
     text-align: right;
+    margin-bottom: 0;
   }
 
   .header-secondary-link {

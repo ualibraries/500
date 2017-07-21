@@ -97,6 +97,11 @@ body {
 
 a {
   color: var(--body-color);
+  transition: color .4s ease;
+}
+
+a:hover {
+  color: color(var(--body-color) shade(30%));
 }
 
 img {
