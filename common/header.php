@@ -42,10 +42,16 @@
 
     <div class="exhibit-header row">
         <div class="exhibit-menu col">
-            <button class="exhibit-menu-toggle">
+            <button class="exhibit-menu-toggle" id="exhibit-menu-toggle">
                 <span class="exhibit-menu-toggle-inner">Menu</span>
             </button>
-            <nav class="exhibit-menu-links">
+            <nav class="exhibit-menu-links" id="exhibit-menu-links">
+                <button class="exhibit-menu-close" id="exhibit-menu-close">
+                    X
+                    <span class="visuallyhidden">
+                        Close
+                    </span>
+                </button>
                 <?php echo exhibit_builder_page_tree(); ?>
             </nav>
         </div>

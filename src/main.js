@@ -1,8 +1,8 @@
 import './styles/main.css'
-import WebFont from 'webfontloader'
+import {loadFonts} from './lib/fonts.js'
+import {exhibitMenu} from './lib/exhibit-menu.js'
 
-WebFont.load({
-  google: {
-    families: ['Merriweather', 'Merriweather:italic', 'Oswald']
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  loadFonts()
+  exhibitMenu()
 })
