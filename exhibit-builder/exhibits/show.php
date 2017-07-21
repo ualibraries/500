@@ -3,10 +3,10 @@ echo head(array(
     'title' => metadata('exhibit_page', 'title') . ' &middot; ' . metadata('exhibit', 'title'),
     'bodyclass' => 'exhibits show'));
 ?>
-
+<div class="exhibit-page-contents">
 <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1>
 
-<div id="exhibit-blocks">
+<div class="exhibit-blocks">
 <?php exhibit_builder_render_exhibit_page(); ?>
 </div>
 
@@ -24,6 +24,8 @@ echo head(array(
     <div id="exhibit-nav-up">
     <?php echo exhibit_builder_page_trail(); ?>
     </div>
+</div>
+
 </div>
 
 <?php echo foot(); ?>

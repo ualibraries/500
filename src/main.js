@@ -3,6 +3,6 @@ import WebFont from 'webfontloader'
 
 WebFont.load({
   google: {
-    families: ['Merriweather', 'Oswald']
+    families: ['Merriweather', 'Merriweather:italic', 'Oswald']
   }
 })
