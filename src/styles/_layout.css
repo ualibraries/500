@@ -4,3 +4,8 @@ footer {
   padding-right: var(--padding-unit);
   padding-left: var(--padding-unit);
 }
+
+.exhibit-page-contents {
+  max-width: 980px;
+  margin: 0 auto;
+}

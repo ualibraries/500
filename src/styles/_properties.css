@@ -7,4 +7,6 @@
   --body-font-family: "Merriweather", serif;
   --header-font-family: "Oswald", sans-serif;
   --padding-unit: 1.5rem;
+  --body-font-size: 16px;
+  --body-line-height: 1.8;
 }
