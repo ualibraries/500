@@ -42,7 +42,9 @@
 
     <div class="exhibit-header row">
         <div class="exhibit-menu col">
-            <button class="exhibit-menu-toggle">Menu</button>
+            <button class="exhibit-menu-toggle">
+                <span class="exhibit-menu-toggle-inner">Menu</span>
+            </button>
             <nav class="exhibit-menu-links">
                 <?php echo exhibit_builder_page_tree(); ?>
             </nav>
