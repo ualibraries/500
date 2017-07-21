@@ -22,6 +22,7 @@
 
     <!-- Stylesheets -->
     <?php
+      queue_css_file('styles');
       echo head_css();
     ?>
 
@@ -36,19 +37,27 @@
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
     <header role="banner">
-            <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
+        <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
+    </header>
 
-            <nav id="exhibit-pages">
-                <p class="visuallyhidden"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></p>
-                <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+    <div class="exhibit-header row">
+        <div class="exhibit-menu col">
+            <button class="exhibit-menu-toggle">Menu</button>
+            <nav class="exhibit-menu-links">
+                <?php echo exhibit_builder_page_tree(); ?>
             </nav>
+        </div>
 
-            <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
+        <div class="site-title col">
+            <?php echo exhibit_builder_link_to_exhibit($exhibit, theme_logo()); ?>
+        </div>
 
-            <a href="<?php echo url(get_theme_option('header_secondary_link')); ?>"><?php echo get_theme_option('header_secondary_link_text'); ?></a>
+        <div class="header-secondary col">
+            <a class="header-secondary-link" href="<?php echo url(get_theme_option('header_secondary_link')); ?>"><?php echo get_theme_option('header_secondary_link_text'); ?></a>
+        </div>
+    </div><!-- .exhibit-header -->
 
-        </header>
 
-        <article id="content">
+    <article id="content">
 
-            <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
+        <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

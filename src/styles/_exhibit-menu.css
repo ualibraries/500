@@ -1,0 +1,42 @@
+.exhibit-menu-toggle {
+  display: block;
+  width: 169px;
+  height: 157px;
+  border: none;
+  outline: none;
+  background-image: url("../images/exhibit-menu-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  font-family: var(--button-font-family);
+  font-size: 2em;
+  text-transform: uppercase;
+  color: var(--rich-red);
+}
+
+.exhibit-menu ul {
+  list-style: none;
+}
+
+.exhibit-menu ul > li {
+  margin: .75em 0;
+}
+
+.exhibit-menu-links {
+  display: none;
+}
+
+@media (--screen-md) {
+  .exhibit-header {
+  }
+
+  .exhibit-menu {
+    width: 30%;
+  }
+
+  .exhibit-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
