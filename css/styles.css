@@ -842,9 +842,6 @@ img {
 }
 
 @media (min-width: 768px) {
-  .exhibit-header {
-  }
-
   .exhibit-menu {
     width: 30%;
   }

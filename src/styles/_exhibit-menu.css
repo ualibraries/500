@@ -45,9 +45,6 @@
 }
 
 @media (--screen-md) {
-  .exhibit-header {
-  }
-
   .exhibit-menu {
     width: 30%;
   }
