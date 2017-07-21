@@ -1,10 +1,9 @@
-
 .site-title {
-  text-align: center;
-  padding-top: var(--padding-unit);
-  padding-bottom: var(--padding-unit);
   margin-top: var(--padding-unit);
   margin-bottom: var(--padding-unit);
+  padding-top: var(--padding-unit);
+  padding-bottom: var(--padding-unit);
+  text-align: center;
 }
 
 .site-title img {
@@ -15,6 +14,10 @@
   filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, .5));
 }
 
+.header-secondary {
+  text-align: center;
+}
+
 .header-secondary-link {
   font-family: var(--header-font-family);
   font-size: 1.2em;
@@ -23,36 +26,16 @@
   text-decoration: none;
 }
 
-.menu ul {
-  list-style: none;
-}
-
-.menu li {
-  margin: .75em 0;
-}
-
-@media only screen and (min-width: 600px) {
+@media (--screen-md) {
   .exhibit-header {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: calc(var(--padding-unit) * 1.5);
-    margin-right: calc(var(--padding-unit) * 1.5);
   }
 
-  .menu {
-    width: 30%;
-  }
-
-  .menu ul {
-    list-style: none;
-    margin-left: calc(-4 * var(--padding-unit));
-  }
-
-  .header-secondary-link {
-    width: 30%;
-  }
-  .header-secondary-link {
+  .header-secondary {
     text-align: right;
+  }
+
+  .header-secondary-link {
+    padding-right: var(--padding-unit);
   }
 }

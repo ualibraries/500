@@ -1,0 +1,9 @@
+@media (--screen-md) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    flex: 1;
+  }
+}

@@ -1,5 +1,6 @@
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const path = require('path')
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 require('dotenv').config()
 
@@ -74,21 +75,14 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
-        loader: 'url-loader?limit=8000&name=assets/[name].[ext]'
+        loader: 'url-loader?limit=8000&name=../images/[name].[ext]'
       },
       {
-        test: /\.css/,
-        use: [
-          {
-            loader: 'style-loader' // creates style nodes from JS strings
-          },
-          {
-            loader: 'css-loader' // translates CSS into CommonJS
-          },
-          {
-            loader: 'postcss-loader' // runs CSS through PostCSS
-          }
-        ]
+        test: /\.css?$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'postcss-loader']
+        })
       }
     ]
 
@@ -153,6 +147,7 @@ module.exports = {
       port: 3000,
       proxy: `http://localhost:${portNum}`,
       open: false
-    })
+    }),
+    new ExtractTextPlugin('../css/styles.css')
   ]
 }
