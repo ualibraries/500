@@ -1,17 +1,19 @@
 /* Main exhibit menu */
 .exhibit-menu {
   position: relative;
+  align-self: flex-start;
   margin-top: 2em;
 }
 
 /* Off canvas exhibit menu toggle button */
 .exhibit-menu-toggle {
   display: block;
-  width: 4em;
+  width: 3.75em;
   height: 3.5em;
+  margin-top: 1.5em;
   border: none;
   outline: none;
-  background-image: url("../images/exhibit-menu-bg.png");
+  background-image: url("../images/exhibit-menu-toggle-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
@@ -29,22 +31,28 @@
 
 .exhibit-menu-toggle-inner {
   display: block;
-  margin-top: -.3em;
-}
-
-.exhibit-menu-toggle-inner::after {
-  content: ">";
-  margin-left: .2em;
+  margin-top: -.4em;
+  margin-left: .25em;
 }
 
 /* Off canvas exhibit menu close button */
 .exhibit-menu-close {
   position: absolute;
-  right: 1em;
+  right: 1.5em;
   top: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("../images/exhibit-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: contain;
   border: none;
   outline: 0;
   background-color: transparent;
+}
+
+.exhibit-menu-close:hover {
+  cursor: pointer;
 }
 
 /* Off canvas exhibit menu */
@@ -53,7 +61,11 @@
   top: 0;
   left: -100%;
   width: 16em;
-  background-color: #ede5ce;
+  background-color: transparent;
+  background-image: url("../images/exhibit-menu-links-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100%;
   font-family: var(--button-font-family);
   font-size: 1.5em;
   transition: left .5s ease;
@@ -65,7 +77,7 @@
 
 .exhibit-menu-links > ul {
   display: block;
-  padding: 2em;
+  padding: 2em 0;
   list-style-type: none;
 }
 
@@ -74,8 +86,31 @@
 }
 
 .exhibit-menu-links a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  max-width: 10em;
+  padding: .5em 2em;
   color: var(--rich-red);
   text-decoration: none;
+  transition: background-position .2s ease-in-out;
+}
+
+.exhibit-menu-links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  background-image: linear-gradient(90deg, var(--exhibit-menu-link-bg), transparent 75%);
+  transition: opacity .2s ease;
+}
+
+.exhibit-menu-links a:hover::before {
+  opacity: 1;
 }
 
 /* Media queries */

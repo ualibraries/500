@@ -41,13 +41,12 @@
     </header>
 
     <div class="exhibit-header row">
-        <div class="exhibit-menu col">
+        <div class="exhibit-menu col" id="exhibit-menu">
             <button class="exhibit-menu-toggle" id="exhibit-menu-toggle">
                 <span class="exhibit-menu-toggle-inner">Menu</span>
             </button>
             <nav class="exhibit-menu-links" id="exhibit-menu-links">
                 <button class="exhibit-menu-close" id="exhibit-menu-close">
-                    X
                     <span class="visuallyhidden">
                         Close
                     </span>
