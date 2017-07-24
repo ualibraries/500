@@ -5,15 +5,29 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
 
 <h1><?php echo metadata('item', 'display_title'); ?></h1>
 
-<?php echo all_element_texts('item'); ?>
+<!-- If this is a 'Book Reader Item" item type, show the UV player -->
+<?php
+    if (metadata('item', 'item_type_name') == "Book Reader Item"){
+        echo $this->universalViewer($item, array(
+            'class' => 'my-class',
+            'config' => web_path_to('universal-viewer/config.json'),
+        ));
+    }
+?>
 
+<?php echo all_element_texts('item', ['show_element_set_headings' => false]); ?>
+
+<!-- If this is a 'Book Reader Item" item type, don't show the files associated with the item -->
+<?php if (metadata('item', 'item_type_name') != "Book Reader Item"): ?>
 <!-- The following returns all of the files associated with an item. -->
-<?php if (metadata('item', 'has files')): ?>
-<div id="itemfiles" class="element">
-    <h3><?php echo __('Files'); ?></h3>
-    <div class="element-text"><?php echo files_for_item(); ?></div>
-</div>
+    <?php if (metadata('item', 'has files')): ?>
+        <div id="itemfiles" class="element">
+            <h3><?php echo __('Files'); ?></h3>
+            <div class="element-text"><?php echo files_for_item(); ?></div>
+        </div>
+    <?php endif; ?>
 <?php endif; ?>
+
 
 <!-- If the item belongs to a collection, the following creates a link to that collection. -->
 <?php if (metadata('item', 'Collection Name')): ?>
