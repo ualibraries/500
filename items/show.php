@@ -15,19 +15,44 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
     }
 ?>
 
-<?php echo all_element_texts('item', ['show_element_set_headings' => false]); ?>
-
 <!-- If this is a 'Book Reader Item" item type, don't show the files associated with the item -->
 <?php if (metadata('item', 'item_type_name') != "Book Reader Item"): ?>
 <!-- The following returns all of the files associated with an item. -->
     <?php if (metadata('item', 'has files')): ?>
         <div id="itemfiles" class="element">
             <h3><?php echo __('Files'); ?></h3>
-            <div class="element-text"><?php echo files_for_item(); ?></div>
+            <?php
+            set_loop_records('files', $item->Files);
+            foreach (loop('files') as $file):
+                $file_title = metadata($file, array('Dublin Core', 'Title'));
+                $file_date = metadata($file, array('Dublin Core', 'Date'));
+                $file_link_to_original = metadata($file, 'uri');
+                $file_fullsize_image = metadata($file, 'fullsize_uri');
+                $file_alt = '';
+
+                if ($file_title) {
+                    $file_alt = $file_title;
+
+                    if ($file_date) {
+                        $file_alt .= ', ' . $file_date;
+                    }
+                }
+            ?>
+            <div class="item-file">
+                <div class="file-link">
+                    <a href="<?php print $file_link_to_original; ?>">
+                        <img src="<?php print $file_fullsize_image; ?>" alt="<?php print $file_alt; ?>" />
+                    </a>
+                    <p class="file-caption"><?php echo $file_title; ?></p>
+                </div>
+
+            <?php endforeach; ?>
+            </div>
         </div>
     <?php endif; ?>
 <?php endif; ?>
 
+<?php echo all_element_texts('item', ['show_element_set_headings' => false]); ?>
 
 <!-- If the item belongs to a collection, the following creates a link to that collection. -->
 <?php if (metadata('item', 'Collection Name')): ?>
