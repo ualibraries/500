@@ -1,8 +1,9 @@
 @import "normalize.css";
 @import "_properties.css";
 @import "_base.css";
-@import "_layout.css";
 @import "_header.css";
 @import "_exhibit-menu.css";
 @import "_grid.css";
 @import "_blocks.css";
+@import "_exhibit-block.css";
+@import "_exhibit-page-pagination.css";

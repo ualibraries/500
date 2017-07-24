@@ -1,0 +1,5 @@
+.exhibit-block {
+  max-width: var(--screen-lg);
+  margin: 0 auto;
+  padding: 0 var(--padding-unit);
+}

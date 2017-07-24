@@ -59,7 +59,7 @@
 .exhibit-menu-links {
   position: absolute;
   top: 0;
-  left: -100%;
+  left: -150%;
   width: 16em;
   background-color: transparent;
   background-image: url("../images/exhibit-menu-links-bg.png");
@@ -77,19 +77,22 @@
 
 .exhibit-menu-links > ul {
   display: block;
-  padding: 2em 0;
+  margin: 0;
+  padding: 2em 2em 2em 0;
   list-style-type: none;
+  overflow: auto;
 }
 
 .exhibit-menu-links > ul > li {
-  margin: .75em 0;
+  display: block;
+  margin: 0;
 }
 
 .exhibit-menu-links a {
   position: relative;
+  display: block;
   z-index: 1;
   display: inline-block;
-  max-width: 10em;
   padding: .5em 2em;
   color: var(--rich-red);
   text-decoration: none;
