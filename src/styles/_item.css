@@ -1,0 +1,72 @@
+.item-title {
+  max-width: var(--screen-lg);
+  margin: 0 auto 1.75em;
+  padding: 0 var(--padding-unit);
+  font-family: var(--header-font-family);
+  font-weight: 400;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+.item-details {
+  max-width: var(--screen-lg);
+  margin: 0 auto;
+  padding: 0 var(--padding-unit);
+}
+
+.item-files-list > .item-file {
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+  margin-bottom: calc(1.5 * var(--padding-unit));
+}
+
+.item-files-list > .item-file > a {
+  position: relative;
+  display: block;
+}
+
+.item-files-list > .item-file > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/download.svg");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: center center;
+  background-color: rgba(175, 157, 108, .85);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.item-files-list > .item-file > a:hover::before,
+.item-files-list > .item-file > a:focus::before {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.item-pagination {
+  margin: var(--padding-unit) 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.item-pagination a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border .2s ease;
+}
+
+.item-pagination a:hover {
+  border-bottom: 2px solid color(var(--body-color) shade(30%));
+}
+
+@media (--screen-sm) {
+  .item-pagination {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
