@@ -60,6 +60,7 @@
   position: absolute;
   top: 0;
   left: -150%;
+  z-index: 10;
   width: 16em;
   background-color: transparent;
   background-image: url("../images/exhibit-menu-links-bg.png");

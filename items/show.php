@@ -40,20 +40,25 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
                     }
                     ?>
                     <div class="item-file">
-                        <div class="file-link">
-                            <a href="<?php print $file_link_to_original; ?>">
+                        <div class="item-file-inner">
+                            <a href="<?php print $file_link_to_original; ?>" class="item-file-link">
                                 <img src="<?php print $file_fullsize_image; ?>" alt="<?php print $file_alt; ?>" />
                             </a>
-                            <p class="file-caption"><?php echo $file_title; ?></p>
-                            <div class="all-metadata">
+                            <p class="item-file-caption">
+                                <?php echo $file_title; ?>
+                            </p>
+                            <button class="item-file-all-metadata-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e6e1d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                                Meta
+                            </button>
+                            <div class="item-file-all-metadata">
                                 <div id="text-metadata">
                                     <?php echo all_element_texts($file, ['show_element_set_headings' => false]); ?>
                                 </div>
                             </div>
                         </div>
-
-                    <?php endforeach; ?>
-                </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         <?php endif; ?>
     <?php endif; ?>
