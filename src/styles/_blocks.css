@@ -1,5 +1,5 @@
 /* Omeka content block types added to exhibit pages */
-.layout-pull-quote {
+.pull-quote {
   border: 0;
   margin: 2.5em 1em;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .layout-pull-quote {
+  .pull-quote {
     margin-left: 32%;
   }
 }
