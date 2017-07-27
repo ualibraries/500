@@ -52,6 +52,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
                                 Details
                             </button>
                             <div class="item-file-all-metadata">
+                                <h2 class="item-file-all-metadata-title">File details</h2>
                                 <button class="item-file-all-metadata-close">
                                     <span class="visuallyhidden">Close</span>
                                 </button>
