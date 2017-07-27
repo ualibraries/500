@@ -29,7 +29,8 @@
 }
 
 .item-file-all-metadata-modal .element {
-  width: 25%;
+  flex: 1;
+  min-width: 25%;
   margin-bottom: var(--padding-unit);
   padding: 1em;
 }

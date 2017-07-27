@@ -1,0 +1,27 @@
+.item-meta {
+  padding: var(--padding-unit);
+  background-color: var(--item-meta-bg);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+  color: black;
+}
+
+.item-meta .element {
+  margin-bottom: var(--padding-unit);
+}
+
+.item-meta .element h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.item-meta a {
+  color: var(--rich-red);
+}
+
+.item-meta a:hover {
+  color: color(var(--rich-red) tint(25%));
+}
+
+.item-meta .element .element-text {
+  font-family: monospace;
+}
