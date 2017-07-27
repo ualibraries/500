@@ -131,7 +131,6 @@ blockquote {
   z-index: 0;
   margin: var(--padding-unit) 1em;
   color: white;
-  font-size: 1.25em;
   font-style: italic;
 }
 
@@ -144,6 +143,12 @@ blockquote:before {
   display: inline-block;
   font-size: 6em;
   color: color(var(--rich-red) tint(25%));
+}
+
+@media (--screen-md) {
+  blockquote {
+    font-size: 1.25em;
+  }
 }
 
 /* ==========================================================================

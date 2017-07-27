@@ -2,7 +2,7 @@
 .exhibit-menu {
   position: relative;
   align-self: flex-start;
-  margin-top: 2em;
+  margin-top: .5em;
 }
 
 /* Off canvas exhibit menu toggle button */
@@ -10,7 +10,8 @@
   display: block;
   width: 3.75em;
   height: 3.5em;
-  margin-top: 2.5em;
+  margin-top: .5em;
+  padding: 0 0 0 .25em;
   border: none;
   outline: none;
   background-image: url("../images/exhibit-menu-toggle-bg.png");
@@ -122,5 +123,9 @@
   .exhibit-menu {
     width: 30%;
     margin-top: 0;
+  }
+
+  .exhibit-menu-toggle {
+    margin-top: 2.5em;
   }
 }

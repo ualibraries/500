@@ -8,6 +8,14 @@
   max-width: 100%;
 }
 
+.exhibit-items.right {
+  float: none !important;
+}
+
+.exhibit-items.left {
+  float: none !important;
+}
+
 .exhibit-items .download-file {
   text-align: center;
 }
@@ -20,4 +28,14 @@
   text-shadow: 0 0 4px rgba(0, 0, 0, .5);
   font-style: italic;
   color: white;
+}
+
+@media (--screen-md) {
+  .exhibit-items.right {
+    float: right !important;
+  }
+
+  .exhibit-items.left {
+    float: left !important;
+  }
 }
