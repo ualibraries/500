@@ -1,0 +1,4 @@
+/* Items which appear within an exhibit block */
+.exhibit-items {
+  margin-bottom: var(--padding-unit);
+}
