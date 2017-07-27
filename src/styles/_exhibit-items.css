@@ -2,3 +2,22 @@
 .exhibit-items {
   margin-bottom: var(--padding-unit);
 }
+
+.exhibit-items.thumbnail {
+  width: 15em;
+  max-width: 100%;
+}
+
+.exhibit-items .download-file {
+  text-align: center;
+}
+
+.exhibit-items .download-file img {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.exhibit-item-caption {
+  text-shadow: 0 0 4px rgba(0, 0, 0, .5);
+  font-style: italic;
+  color: white;
+}
