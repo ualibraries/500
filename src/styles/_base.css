@@ -126,6 +126,26 @@ h6 {
   font-family: var(--header-font-family);
 }
 
+blockquote {
+  position: relative;
+  z-index: 0;
+  margin: var(--padding-unit) 1em;
+  color: white;
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+blockquote:before {
+  content: "\201C";
+  position: absolute;
+  top: -.45em;
+  left: -.45em;;
+  z-index: -1;
+  display: inline-block;
+  font-size: 6em;
+  color: color(var(--rich-red) tint(25%));
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
