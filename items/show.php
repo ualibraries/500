@@ -52,7 +52,9 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
                                 Details
                             </button>
                             <div class="item-file-all-metadata">
-                                <button class="item-file-all-metadata-close">Close</button>
+                                <button class="item-file-all-metadata-close">
+                                    <span class="visuallyhidden">Close</span>
+                                </button>
                                 <div id="text-metadata">
                                     <?php echo all_element_texts($file, ['show_element_set_headings' => false]); ?>
                                 </div>
