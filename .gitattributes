@@ -1,2 +1,4 @@
 javascripts/bundle.js -diff
 javascripts/bundle.js.map -diff
+css/styles.css -diff
+css/styles.css.map -diff

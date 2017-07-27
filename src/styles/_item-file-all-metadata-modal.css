@@ -6,13 +6,10 @@
   bottom: -100%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: var(--screen-xl);
   max-height: 20em;
   overflow: scroll;
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-  border: 2px solid white;
-  padding: var(--padding-unit);
-  /*background-color: #f4f1ec;*/
+  border-top: 2px solid white;
   background-color: var(--item-meta-bg);
   color: black;
   font-size: .8em;
