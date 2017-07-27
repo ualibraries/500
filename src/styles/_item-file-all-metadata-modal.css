@@ -10,8 +10,10 @@
   max-height: 20em;
   overflow: scroll;
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+  border: 2px solid white;
   padding: var(--padding-unit);
-  background-color: #f4f1ec;
+  /*background-color: #f4f1ec;*/
+  background-color: var(--item-meta-bg);
   color: black;
   font-size: .8em;
   transition: bottom .5s ease;
@@ -36,8 +38,7 @@
 }
 
 .item-file-all-metadata-modal .element h3 {
-  margin: 0 0 1em 0;
-  border-top: 2px solid var(--rich-red);
+  margin: 0;
   color: var(--rich-red);
   font-family: var(--header-font-family);
   font-size: 1em;
