@@ -56,7 +56,7 @@
         </div>
 
         <div class="site-title col">
-            <?php echo exhibit_builder_link_to_exhibit($exhibit, theme_logo()); ?>
+            <?php echo exhibit_builder_link_to_exhibit(null, theme_logo()); ?>
         </div>
 
         <div class="header-secondary col">
