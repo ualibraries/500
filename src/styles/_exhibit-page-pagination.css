@@ -1,4 +1,5 @@
 .exhibit-page-navigation {
+  clear: both;
   margin: calc(2 * var(--padding-unit)) 0;
 }
 
