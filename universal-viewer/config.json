@@ -264,7 +264,7 @@
         "pageGap": 50,
         "showHomeControl": false,
         "trimAttributionCount": 150,
-        "visibilityRatio": 0.5
+        "visibilityRatio": 0.95
       },
       "content": {
         "attribution": "Attribution",
