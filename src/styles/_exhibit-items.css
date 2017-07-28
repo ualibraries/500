@@ -10,10 +10,12 @@
 
 .exhibit-items.right {
   float: none !important;
+  margin: 1em auto !important;
 }
 
 .exhibit-items.left {
   float: none !important;
+  margin: 1em auto !important;
 }
 
 .exhibit-items .download-file {
@@ -33,9 +35,13 @@
 @media (--screen-md) {
   .exhibit-items.right {
     float: right !important;
+    margin-left: 2% !important;
+    margin-right: 0 !important;
   }
 
   .exhibit-items.left {
     float: left !important;
+    margin-left: 0 !important;
+    margin-right: 2% !important;
   }
 }

@@ -11,5 +11,6 @@
 @media (--screen-md) {
   .exhibit-page-title {
     margin: 0 auto 1.75em;
+    font-size: 2em;
   }
 }
