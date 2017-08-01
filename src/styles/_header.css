@@ -5,7 +5,7 @@
 }
 
 .site-title img {
-  width: 500px;
+  width: 75%;
   max-width: 100%;
 }
 
@@ -28,8 +28,7 @@
 
 @media (--screen-md) {
   .site-title {
-    margin-top: var(--padding-unit);
-    margin-bottom: var(--padding-unit);
+    margin: var(--padding-unit) 0 0 0;
   }
 
   .exhibit-header {
