@@ -2,7 +2,8 @@ import {forEach} from 'lodash'
 
 // Array, stylesheets to disable
 const disabled = [
-  'plugins/ExhibitBuilder/views/shared/exhibit_layouts/gallery/layout.css'
+  'plugins/ExhibitBuilder/views/shared/exhibit_layouts/gallery/layout.css',
+  'plugins/PullquoteLayout/views/shared/exhibit_layouts/pull-quote/layout.css'
 ]
 
 // Disable stylesheets listed in the `disabled` array

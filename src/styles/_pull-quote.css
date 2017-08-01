@@ -1,0 +1,25 @@
+/* Pull-quote layout */
+.layout-pull-quote {
+  position: relative;
+  z-index: 0;
+  margin: var(--padding-unit) auto;
+  color: white;
+  font-style: italic;
+}
+
+.layout-pull-quote::before {
+  content: "\201C";
+  position: absolute;
+  top: -.35em;
+  left: -.35em;;
+  z-index: -1;
+  display: inline-block;
+  font-size: 6em;
+  color: color(var(--rich-red) tint(25%));
+}
+
+@media (--screen-md) {
+  .layout-pull-quote {
+    font-size: 1.25em;
+  }
+}
