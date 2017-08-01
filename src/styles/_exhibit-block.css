@@ -1,6 +1,6 @@
 .exhibit-block {
   max-width: var(--screen-lg);
-  margin: 0 auto;
+  margin: 0 auto calc(2 * var(--padding-unit));
   padding: 0 var(--padding-unit);
   word-wrap: break-word;
 }

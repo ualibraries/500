@@ -1,0 +1,49 @@
+.gallery.captions-center {
+  text-align: center;
+}
+
+.exhibit-item-link {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.exhibit-item-link::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .2s ease;
+  background-image: url("../images/book.svg");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: center center;
+  background-color: rgba(175, 157, 108, .85);
+}
+
+.exhibit-item-link:hover::before {
+  opacity: 1;
+}
+
+.exhibit-item-link img {
+  position: relative;
+  display: block;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+@media (--screen-md) {
+  .layout-gallery .gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .exhibit-gallery-item {
+    width: 25%;
+  }
+}
