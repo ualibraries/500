@@ -20,9 +20,9 @@ echo head(array(
                 }
                 ?>
             </div>
+        <?php else: ?>
+            <h1 class="exhibit-page-title"><?php echo metadata('exhibit_page', 'title'); ?></h1>
         <?php endif; ?>
-
-        <h1 class="exhibit-page-title"><?php echo metadata('exhibit_page', 'title'); ?></h1>
 
         <div class="exhibit-blocks">
             <?php exhibit_builder_render_exhibit_page(); ?>
