@@ -13,7 +13,7 @@
   z-index: 1;
   max-width: 600px;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .exhibit-nav-prev-inner::before,
@@ -34,11 +34,11 @@
 .exhibit-nav-prev a,
 .exhibit-nav-next a {
   display: inline-block;
-  height: 5em;
+  height: 4em;
   overflow: hidden;
   font-family: var(--button-font-family);
   color: var(--rich-red);
-  line-height: 5em;
+  line-height: 4em;
   text-decoration: none;
 }
 
