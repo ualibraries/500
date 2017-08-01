@@ -1,0 +1,21 @@
+/* <h2 class="fancy-header">Featured items</h2> */
+.fancy-header {
+  position: relative;
+  margin-bottom: 3em;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fancy-header::after {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background-image: url("../images/fancy-header-decoration.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 2em;
+}
