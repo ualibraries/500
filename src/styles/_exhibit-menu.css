@@ -89,7 +89,7 @@
 
 .exhibit-menu-links > ul > li {
   display: block;
-  margin: 0;
+  margin: 0 0 .5em 0;
 }
 
 .exhibit-menu-links a {
@@ -100,6 +100,7 @@
   padding: .5em 2em;
   color: var(--rich-red);
   text-decoration: none;
+  line-height: 1.25;
   transition: background-position .2s ease-in-out;
 }
 
