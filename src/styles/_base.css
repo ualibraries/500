@@ -134,7 +134,7 @@ blockquote {
   font-style: italic;
 }
 
-blockquote:before {
+blockquote::before {
   content: "\201C";
   position: absolute;
   top: -.45em;

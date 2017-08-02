@@ -68,7 +68,8 @@
   background-image: url("../images/exhibit-menu-links-bg.svg");
   background-repeat: repeat-y;
   background-position: right top;
-  background-size: 100%;
+  /* Set background size with actual integers for IE11 */
+  background-size: 16em calc(16 * 2.3)em;
   font-family: var(--button-font-family);
   font-size: 1.25em;
   transition: left .5s ease;

@@ -33,6 +33,14 @@ PORT=8888
 Browsersync uses port 3000 to proxy the existing content. Visit `localhost:3000/path/to/your/site`
 to see the fancy live reloading. Visit `localhost:3001` to see the Browsersync UI.
 
+## Fancy headers
+
+You can make a fancy header with the `fancy-header class`:
+
+```
+<h2 class="fancy-header">Featured items</h2>
+```
+
 ## Learn more
 
 * [PostCSS](http://postcss.org/) and [CSSNext](http://cssnext.io/)
