@@ -7,7 +7,7 @@ function open (nav) {
   // Add the overlay
   let overlay = document.createElement('div')
   overlay.className = 'exhibit-menu-links-overlay'
-  document.body.append(overlay)
+  document.body.appendChild(overlay)
 
   // Fade in the overlay
   setTimeout(() => {
