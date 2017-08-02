@@ -7,8 +7,8 @@
   transform: translateX(-50%);
   width: 100%;
   max-height: 20em;
-  min-height: 3.75em;
   overflow: scroll;
+  padding-bottom: .75em;
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
   border-top: 2px solid white;
   background-color: var(--item-meta-bg);
