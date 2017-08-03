@@ -250,7 +250,7 @@
     "seadragonCenterPanel": {
       "options": {
         "animationTime": 0.15,
-        "autoHideControls": true,
+        "autoHideControls": false,
         "attributionEnabled": false,
         "blendTime": 0,
         "constrainDuringPan": false,
