@@ -10,7 +10,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
     <?php
     if (metadata('item', 'item_type_name') == "Book Reader Item"){
         echo $this->universalViewer($item, array(
-            'class' => 'my-class',
+            'class' => 'universal-viewer',
             'config' => web_path_to('universal-viewer/config.json'),
         ));
     }

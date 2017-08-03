@@ -90,8 +90,8 @@
         "confinedImageSize": 1000,
         "currentViewDisabledPercentage": 90,
         "maxImageWidth": 5000,
-        "optionsExplanatoryTextEnabled": false,
-        "selectionEnabled": false
+        "optionsExplanatoryTextEnabled": true,
+        "selectionEnabled": true
       },
       "content": {
         "currentViewAsJpg": "Current view {0} x {1}px (jpg)",
@@ -117,7 +117,7 @@
     "footerPanel": {
       "options": {
         "bookmarkEnabled": false,
-        "downloadEnabled": false,
+        "downloadEnabled": true,
         "embedEnabled": false,
         "feedbackEnabled": false,
         "fullscreenEnabled": true,
