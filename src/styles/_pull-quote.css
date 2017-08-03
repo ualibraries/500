@@ -18,6 +18,10 @@
   color: color(var(--rich-red) tint(25%));
 }
 
+.pull-quote {
+  margin: 0 !important;
+}
+
 @media (--screen-md) {
   .layout-pull-quote {
     font-size: 1.25em;

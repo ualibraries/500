@@ -34,7 +34,7 @@
 .item-files-list .item-file-link {
   position: relative;
   display: block;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, .5);
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
   transition: box-shadow .2s ease, border .2s ease;
   margin-bottom: 1em;
@@ -76,12 +76,12 @@
   font-family: var(--body-font-family);
   font-size: .8em;
   color: var(--body-color);
-  transition: border .2s ease;
+  transition: border .2s ease, color .2s ease;
 }
 
 .item-file-all-metadata-toggle:hover {
   cursor: pointer;
-  border: 1px solid var(--body-color);
+  color: color(var(--body-color) shade(25%))
 }
 
 .item-file-all-metadata-toggle .feather-info {
