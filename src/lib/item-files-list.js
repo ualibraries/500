@@ -11,7 +11,8 @@ function itemFilesList () {
   imagesLoaded(container, () => {
     let masonry = new Masonry(container, {
       itemSelector: '.item-file',
-      columnWidth: 248
+      columnWidth: 248,
+      horizontalOrder: true
     })
 
     return masonry
