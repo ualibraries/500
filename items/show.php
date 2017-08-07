@@ -47,19 +47,16 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
                             <p class="item-file-caption">
                                 <?php echo $file_title; ?>
                             </p>
+                            <?php if (all_element_texts($file)): ?>
                             <button class="item-file-all-metadata-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e6e1d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
                                 Details
                             </button>
                             <div class="item-file-all-metadata">
-                                <h2 class="item-file-all-metadata-title">File details</h2>
-                                <button class="item-file-all-metadata-close">
-                                    <span class="visuallyhidden">Close</span>
-                                </button>
                                 <div id="text-metadata">
                                     <?php echo all_element_texts($file, ['show_element_set_headings' => false]); ?>
                                 </div>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>

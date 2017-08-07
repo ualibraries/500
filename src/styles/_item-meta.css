@@ -1,3 +1,4 @@
+/* Item metadata card */
 .item-meta {
   padding: var(--padding-unit);
   background-color: var(--item-meta-bg);
@@ -12,6 +13,8 @@
 .item-meta .element h3 {
   margin: 0;
   font-size: 1em;
+  font-family: var(--body-font-family);
+  color: color(black tint(45%));
 }
 
 .item-meta a {
@@ -20,10 +23,6 @@
 
 .item-meta a:hover {
   color: color(var(--rich-red) tint(25%));
-}
-
-.item-meta .element .element-text {
-  font-family: monospace;
 }
 
 /* The output formats list */
@@ -50,4 +49,30 @@
 .item-output-formats a:hover {
   background-color: color(var(--rich-red) tint(25%));
   color: white;
+}
+
+/* File metadata */
+.item-file-all-metadata {
+  height: 0;
+  font-size: .85em;
+  transition: height 1s ease;
+  overflow: hidden;
+}
+
+.item-file-all-metadata h3 {
+  margin: 0;
+  font-weight: 200;
+  font-family: var(--body-font-family);
+  font-size: 1em;
+  color: color(var(--body-color) shade(30%));
+}
+
+.item-file-all-metadata .element {
+  margin: 0 0 1em 0;
+  padding: 0 0 1em 0;
+  border-bottom: 1px solid var(--body-color);
+}
+
+.item-file-all-metadata .element:last-child {
+  border-bottom: none;
 }
