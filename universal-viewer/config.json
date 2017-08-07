@@ -91,7 +91,7 @@
         "currentViewDisabledPercentage": 90,
         "maxImageWidth": 5000,
         "optionsExplanatoryTextEnabled": true,
-        "selectionEnabled": true
+        "selectionEnabled": false
       },
       "content": {
         "currentViewAsJpg": "Current view {0} x {1}px (jpg)",
@@ -109,7 +109,7 @@
         "wholeImageHighRes": "Whole image {0} x {1}px ({2})",
         "wholeImageHighResExplanation": "Opens in a new window.",
         "wholeImagesHighRes": "Whole images ({0})",
-        "wholeImagesHighResExplanation": "Opens in two new windows.",
+        "wholeImagesHighResExplanation": "Opens in two new windows. In order to download both images, please disable pop-up blocking in your browser.",
         "wholeImageLowResAsJpg": "Whole image {0} x {1}px (jpg)",
         "wholeImageLowResAsJpgExplanation": "Opens in a new window."
       }
