@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: center center;
-  background-color: rgba(175, 157, 108, .25);
+  background-color: rgba(175, 157, 108, .75);
 }
 
 .book-reader-gallery .exhibit-item-link::after {
@@ -31,13 +31,13 @@
   z-index: 3;
   bottom: 0;
   right: 0;
-  height: 2.25em;
-  width: 2.5em;
-  background-color: rgba(104, 20, 22, .75);
+  height: 3.5em;
+  width: 4em;
+  background-color: rgba(104, 20, 22, .9);
   background-image: url("../images/bookreader.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 1.5em;
+  background-size: 2em;
 }
 
 .book-reader-gallery .exhibit-item-link:hover::before {
@@ -52,6 +52,7 @@
   position: relative;
   display: block;
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+  max-height: 400px;
 }
 
 @media (--screen-md) {
@@ -62,6 +63,6 @@
   }
 
   .book-reader-gallery .exhibit-gallery-item {
-    width: 25%;
+    width: 30%;
   }
 }
