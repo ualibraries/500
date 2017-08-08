@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <?php if ( $description = option('description')): ?>
-        <meta name="description" content="<?php echo $description; ?>" />
+        <meta name="description" content="<?php echo $description; ?>">
     <?php endif; ?>
     <?php
     if (isset($title)) {
@@ -13,7 +13,15 @@
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <?php
+    // Adds favicons
+    theme_favicon();
+    theme_apple_touch_icon();
+    theme_ms_wide_tile();
+    theme_ms_square_tile();
+    ?>
 
     <?php echo auto_discovery_link_tags(); ?>
 
