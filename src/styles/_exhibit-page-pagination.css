@@ -34,11 +34,11 @@
 .exhibit-nav-prev a,
 .exhibit-nav-next a {
   display: inline-block;
-  height: 4em;
+  height: 3em;
   overflow: hidden;
   font-family: var(--button-font-family);
   color: var(--rich-red);
-  line-height: 4em;
+  line-height: 3.3em;
   text-decoration: none;
 }
 
