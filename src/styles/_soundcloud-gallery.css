@@ -5,3 +5,7 @@
 .soundcloud-gallery .exhibit-item-link {
   font-size: .75em;
 }
+
+.soundcloud-wrap {
+  margin-bottom: var(--padding-unit);
+}
