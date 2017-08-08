@@ -1,5 +1,6 @@
 /* Item metadata card */
 .item-meta {
+  margin-bottom: var(--padding-unit);
   padding: var(--padding-unit);
   background-color: var(--item-meta-bg);
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
