@@ -65,7 +65,7 @@ function theme_ms_square_tile() {
 
 /**
 * Generates the item's files
-* @param  Object $item the item
+* @param  Object $item in the item
 * @return String list of files
 */
 function theme_item_files($item, $filetypes = 'images') {
@@ -89,6 +89,11 @@ function theme_item_files($item, $filetypes = 'images') {
     <?php endif;
 }
 
+/**
+ * Generate html for a single item image file
+ * @param  Object, a file
+ * @return String, html
+ */
 function theme_item_single_image($file) {
     ?>
     <div class="item-file">
@@ -114,6 +119,11 @@ function theme_item_single_image($file) {
     <?php
 }
 
+/**
+ * Generate html for single item PDF file
+ * @param Object, a file
+ * @return String, html
+ */
 function theme_item_single_pdf($file) {
     ?>
     <div class="item-file">
