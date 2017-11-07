@@ -42,9 +42,9 @@
   text-decoration: none;
 }
 
-.exhibit-nav-prev a:hover,
-.exhibit-nav-next a:hover {
-  color: color(var(--rich-red) tint(30%));
+.exhibit-nav-prev,
+.exhibit-nav-next {
+  text-align: center;
 }
 
 .exhibit-nav-prev a {
@@ -57,6 +57,11 @@
   padding-right: 2em;
 }
 
+.exhibit-nav-prev a:hover,
+.exhibit-nav-next a:hover {
+  color: color(var(--rich-red) tint(30%));
+}
+
 @media (--screen-md) {
   .exhibit-page-navigation {
     display: flex;
@@ -66,6 +71,10 @@
   .exhibit-nav-prev,
   .exhibit-nav-next {
     flex: 1;
+  }
+
+  .exhibit-nav-prev {
+    text-align: left;
   }
 
   .exhibit-nav-next {
