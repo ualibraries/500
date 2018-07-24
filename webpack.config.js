@@ -1,6 +1,6 @@
 const path = require('path')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 require('dotenv').config()
 
@@ -79,10 +79,17 @@ module.exports = {
       },
       {
         test: /\.css?$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'postcss-loader']
-        })
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+              // publicPath: 'css'
+            }
+          },
+          'css-loader', 'postcss-loader'
+        ]
       }
     ]
 
@@ -148,6 +155,8 @@ module.exports = {
       proxy: `http://localhost:${portNum}`,
       open: false
     }),
-    new ExtractTextPlugin('../css/styles.css')
+    new MiniCssExtractPlugin({
+      filename: '../css/styles.css'
+    })
   ]
 }
