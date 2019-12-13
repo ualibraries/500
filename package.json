@@ -44,7 +44,7 @@
     "stylelint": "^10.1.0",
     "url-loader": "^1.0.1",
     "webfontloader": "^1.6.28",
-    "webpack": "^4.16.2"
+    "webpack": "^4.41.2"
   },
   "engines": {
     "node": "v8.7.0"
