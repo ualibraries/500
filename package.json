@@ -50,6 +50,6 @@
     "node": "v8.7.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.12"
   }
 }
