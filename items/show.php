@@ -6,6 +6,8 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
 <h1 class="item-title"><?php echo metadata('item', 'display_title'); ?></h1>
 <div class="item-details">
 
+    <?php fire_plugin_hook('public_show_aviarymedia_item', array('view' => $this, 'item' => $item)); ?>
+
     <?php
     // If this is a 'Book Reader Item' item type, show the UV viewer
     if (metadata('item', 'item_type_name') == 'Book Reader Item') {
@@ -68,7 +70,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
         <div class="element-text"><?php echo output_format_list(); ?></div>
     </div>
 
-    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item, 'exclude_aviarymedia' => true)); ?>
 
     </div><!--.item-meta -->
 
