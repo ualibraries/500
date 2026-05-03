@@ -33,7 +33,7 @@
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
     "mem": "^4.0.0",
-    "mini-css-extract-plugin": "^0.4.1",
+    "mini-css-extract-plugin": "^0.4.5",
     "normalize.css": "^7.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^10.0.0",
